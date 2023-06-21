@@ -1,0 +1,245 @@
+<testsuites id="" name="" tests="3" failures="3" skipped="0" errors="0" time="12.897993000030517">
+<testsuite name="features/login.feature.spec.js" timestamp="2023-06-21T12:55:47.279Z" hostname="chromium" tests="1" failures="1" skipped="0" time="12.034" errors="0">
+<testcase name="Andrii User Story @REQ_TP-24 @regression › Positive login scenario @TEST_TP-21 @smoke" classname="features/login.feature.spec.js" time="12.034">
+<failure message="login.feature.spec.js:6:7 Positive login scenario @TEST_TP-21 @smoke" type="FAILURE">
+<![CDATA[  [chromium] › features/login.feature.spec.js:6:7 › Andrii User Story @REQ_TP-24 @regression › Positive login scenario @TEST_TP-21 @smoke 
+
+    Error: Timed out 5000ms waiting for expect(received).toHaveURL(expected)
+
+    Expected pattern: /\/inventory.html/
+    Received string:  "https://www.saucedemo.com/"
+    Call log:
+      - expect.soft.toHaveURL with timeout 5000ms
+      - waiting for locator(':root')
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+
+
+       at ../framework/pages/BasePage.ts:22
+
+      20 |   async verifyURL(): Promise<void> {
+      21 |     await expect.soft(this.page).toHaveURL(this.url_regex!);
+    > 22 |   }
+         |    ^
+      23 |
+      24 |   async verifyTabTitle(): Promise<void> {
+      25 |     await expect.soft(this.page).toHaveTitle(this.title_regex!);
+
+        at InventoryPage.verifyURL (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts:22:40)
+        at InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts:18:16)
+        at async InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/InventoryPage.ts:23:5)
+
+    Error: Timed out 5000ms waiting for expect(received).toBeVisible()
+    Call log:
+      - expect.toBeVisible with timeout 5000ms
+      - waiting for locator('id=inventory_container').first()
+
+
+       at ../framework/pages/InventoryPage.ts:24
+
+      22 |
+
+        at InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/InventoryPage.ts:24:54)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/features-login.feature-Andrii-User-Story-REQ-T-dcb6f-ession-Positive-login-scenario-TEST-TP-21-smoke-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/features-login.feature-Andrii-User-Story-REQ-T-dcb6f-ession-Positive-login-scenario-TEST-TP-21-smoke-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/features-login.feature-Andrii-User-Story-REQ-T-dcb6f-ession-Positive-login-scenario-TEST-TP-21-smoke-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[Attemting to login with credentials  standard_user2, secret_sauce
+
+[[ATTACHMENT|../test-results/features-login.feature-Andrii-User-Story-REQ-T-dcb6f-ession-Positive-login-scenario-TEST-TP-21-smoke-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/features-login.feature-Andrii-User-Story-REQ-T-dcb6f-ession-Positive-login-scenario-TEST-TP-21-smoke-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="features/login.feature.spec.js" timestamp="2023-06-21T12:55:47.279Z" hostname="Mobile Chrome" tests="1" failures="1" skipped="0" time="12.086" errors="0">
+<testcase name="Andrii User Story @REQ_TP-24 @regression › Positive login scenario @TEST_TP-21 @smoke" classname="features/login.feature.spec.js" time="12.086">
+<failure message="login.feature.spec.js:6:7 Positive login scenario @TEST_TP-21 @smoke" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › features/login.feature.spec.js:6:7 › Andrii User Story @REQ_TP-24 @regression › Positive login scenario @TEST_TP-21 @smoke 
+
+    Error: Timed out 5000ms waiting for expect(received).toHaveURL(expected)
+
+    Expected pattern: /\/inventory.html/
+    Received string:  "https://www.saucedemo.com/"
+    Call log:
+      - expect.soft.toHaveURL with timeout 5000ms
+      - waiting for locator(':root')
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+
+
+       at ../framework/pages/BasePage.ts:22
+
+      20 |   async verifyURL(): Promise<void> {
+      21 |     await expect.soft(this.page).toHaveURL(this.url_regex!);
+    > 22 |   }
+         |    ^
+      23 |
+      24 |   async verifyTabTitle(): Promise<void> {
+      25 |     await expect.soft(this.page).toHaveTitle(this.title_regex!);
+
+        at InventoryPage.verifyURL (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts:22:40)
+        at InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts:18:16)
+        at async InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/InventoryPage.ts:23:5)
+
+    Error: Timed out 5000ms waiting for expect(received).toBeVisible()
+    Call log:
+      - expect.toBeVisible with timeout 5000ms
+      - waiting for locator('id=inventory_container').first()
+
+
+       at ../framework/pages/InventoryPage.ts:24
+
+      22 |
+
+        at InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/InventoryPage.ts:24:54)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/features-login.feature-Andrii-User-Story-REQ-T-dcb6f-ession-Positive-login-scenario-TEST-TP-21-smoke-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/features-login.feature-Andrii-User-Story-REQ-T-dcb6f-ession-Positive-login-scenario-TEST-TP-21-smoke-Mobile-Chrome/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/features-login.feature-Andrii-User-Story-REQ-T-dcb6f-ession-Positive-login-scenario-TEST-TP-21-smoke-Mobile-Chrome/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[Attemting to login with credentials  standard_user2, secret_sauce
+
+[[ATTACHMENT|../test-results/features-login.feature-Andrii-User-Story-REQ-T-dcb6f-ession-Positive-login-scenario-TEST-TP-21-smoke-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/features-login.feature-Andrii-User-Story-REQ-T-dcb6f-ession-Positive-login-scenario-TEST-TP-21-smoke-Mobile-Chrome/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="features/login.feature.spec.js" timestamp="2023-06-21T12:55:47.279Z" hostname="Mobile Safari" tests="1" failures="1" skipped="0" time="12.287" errors="0">
+<testcase name="Andrii User Story @REQ_TP-24 @regression › Positive login scenario @TEST_TP-21 @smoke" classname="features/login.feature.spec.js" time="12.287">
+<failure message="login.feature.spec.js:6:7 Positive login scenario @TEST_TP-21 @smoke" type="FAILURE">
+<![CDATA[  [Mobile Safari] › features/login.feature.spec.js:6:7 › Andrii User Story @REQ_TP-24 @regression › Positive login scenario @TEST_TP-21 @smoke 
+
+    Error: Timed out 5000ms waiting for expect(received).toHaveURL(expected)
+
+    Expected pattern: /\/inventory.html/
+    Received string:  "https://www.saucedemo.com/"
+    Call log:
+      - expect.soft.toHaveURL with timeout 5000ms
+      - waiting for locator(':root')
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+      -   locator resolved to <html lang="en">…</html>
+      -   unexpected value "https://www.saucedemo.com/"
+
+
+       at ../framework/pages/BasePage.ts:22
+
+      20 |   async verifyURL(): Promise<void> {
+      21 |     await expect.soft(this.page).toHaveURL(this.url_regex!);
+    > 22 |   }
+         |    ^
+      23 |
+      24 |   async verifyTabTitle(): Promise<void> {
+      25 |     await expect.soft(this.page).toHaveTitle(this.title_regex!);
+
+        at InventoryPage.verifyURL (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts:22:40)
+        at InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts:18:16)
+        at async InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/InventoryPage.ts:23:5)
+
+    Error: Timed out 5000ms waiting for expect(received).toBeVisible()
+    Call log:
+      - expect.toBeVisible with timeout 5000ms
+      - waiting for locator('id=inventory_container').first()
+
+
+       at ../framework/pages/InventoryPage.ts:24
+
+      22 |
+
+        at InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/InventoryPage.ts:24:54)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/features-login.feature-Andrii-User-Story-REQ-T-dcb6f-ession-Positive-login-scenario-TEST-TP-21-smoke-Mobile-Safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/features-login.feature-Andrii-User-Story-REQ-T-dcb6f-ession-Positive-login-scenario-TEST-TP-21-smoke-Mobile-Safari/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/features-login.feature-Andrii-User-Story-REQ-T-dcb6f-ession-Positive-login-scenario-TEST-TP-21-smoke-Mobile-Safari/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[Attemting to login with credentials  standard_user2, secret_sauce
+
+[[ATTACHMENT|../test-results/features-login.feature-Andrii-User-Story-REQ-T-dcb6f-ession-Positive-login-scenario-TEST-TP-21-smoke-Mobile-Safari/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/features-login.feature-Andrii-User-Story-REQ-T-dcb6f-ession-Positive-login-scenario-TEST-TP-21-smoke-Mobile-Safari/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

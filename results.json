@@ -1,0 +1,436 @@
+{
+  "config": {
+    "configFile": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/playwright.config.ts",
+    "rootDir": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/.features-gen",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "totalTime": 12865.856999993324
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "./outcome/html",
+          "open": "on-failure"
+        }
+      ],
+      [
+        "line",
+        null
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "./outcome/test-results/results.xml"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ],
+      [
+        "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/reporter.ts",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/.features-gen",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/.features-gen",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "Mobile Safari",
+        "name": "Mobile Safari",
+        "testDir": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/.features-gen",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.35.1",
+    "workers": 3,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "features/login.feature.spec.js",
+      "file": "features/login.feature.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Andrii User Story @REQ_TP-24 @regression",
+          "file": "features/login.feature.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Positive login scenario @TEST_TP-21 @smoke",
+              "ok": false,
+              "tags": [
+                "TEST_TP-21",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "failed",
+                      "duration": 12034,
+                      "error": {
+                        "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/\\/inventory.html/\u001b[39m\nReceived string:  \u001b[31m\"https://www.saucedemo.com/\"\u001b[39m\nCall log:\n  \u001b[2m- expect.soft.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/\\/inventory.html/\u001b[39m\nReceived string:  \u001b[31m\"https://www.saucedemo.com/\"\u001b[39m\nCall log:\n  \u001b[2m- expect.soft.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\n    at InventoryPage.verifyURL (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts:22:40)\n    at InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts:18:16)\n    at async InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/InventoryPage.ts:23:5)",
+                        "location": {
+                          "file": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts",
+                          "column": 40,
+                          "line": 22
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../framework/pages/BasePage.ts:22\n\n\u001b[0m \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m verifyURL()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage)\u001b[33m.\u001b[39mtoHaveURL(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39murl_regex\u001b[33m!\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 23 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 24 |\u001b[39m   \u001b[36masync\u001b[39m verifyTabTitle()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtitle_regex\u001b[33m!\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts",
+                            "column": 40,
+                            "line": 22
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/\\/inventory.html/\u001b[39m\nReceived string:  \u001b[31m\"https://www.saucedemo.com/\"\u001b[39m\nCall log:\n  \u001b[2m- expect.soft.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../framework/pages/BasePage.ts:22\n\n\u001b[0m \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m verifyURL()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage)\u001b[33m.\u001b[39mtoHaveURL(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39murl_regex\u001b[33m!\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 23 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 24 |\u001b[39m   \u001b[36masync\u001b[39m verifyTabTitle()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtitle_regex\u001b[33m!\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at InventoryPage.verifyURL (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts:22:40)\u001b[22m\n\u001b[2m    at InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts:18:16)\u001b[22m\n\u001b[2m    at async InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/InventoryPage.ts:23:5)\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/InventoryPage.ts",
+                            "column": 54,
+                            "line": 24
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('id=inventory_container').first()\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../framework/pages/InventoryPage.ts:24\n\n\u001b[0m \u001b[90m 22 |\u001b[39m\u001b[0m\n\n\u001b[2m    at InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/InventoryPage.ts:24:54)\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Attemting to login with credentials  standard_user2, secret_sauce\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "I am on the login screen",
+                          "duration": 683
+                        },
+                        {
+                          "title": "I fill the login form with \"standard_user2\" username and \"secret_sauce\" password",
+                          "duration": 104
+                        },
+                        {
+                          "title": "I should be able to see the home screen",
+                          "duration": 10029,
+                          "error": {
+                            "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('id=inventory_container').first()\u001b[22m\n",
+                            "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('id=inventory_container').first()\u001b[22m\n\n    at InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/InventoryPage.ts:24:54)",
+                            "location": {
+                              "file": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/InventoryPage.ts",
+                              "column": 54,
+                              "line": 24
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m../framework/pages/InventoryPage.ts:24\n\n\u001b[0m \u001b[90m 22 |\u001b[39m\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2023-06-21T12:55:47.666Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/test-results/features-login.feature-Andrii-User-Story-REQ-T-dcb6f-ession-Positive-login-scenario-TEST-TP-21-smoke-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/test-results/features-login.feature-Andrii-User-Story-REQ-T-dcb6f-ession-Positive-login-scenario-TEST-TP-21-smoke-chromium/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts",
+                        "column": 40,
+                        "line": 22
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "06311dfec990197f7291-ee4bf71767b8e7e7dcfa",
+              "file": "features/login.feature.spec.js",
+              "line": 6,
+              "column": 7
+            },
+            {
+              "title": "Positive login scenario @TEST_TP-21 @smoke",
+              "ok": false,
+              "tags": [
+                "TEST_TP-21",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "failed",
+                      "duration": 12086,
+                      "error": {
+                        "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/\\/inventory.html/\u001b[39m\nReceived string:  \u001b[31m\"https://www.saucedemo.com/\"\u001b[39m\nCall log:\n  \u001b[2m- expect.soft.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/\\/inventory.html/\u001b[39m\nReceived string:  \u001b[31m\"https://www.saucedemo.com/\"\u001b[39m\nCall log:\n  \u001b[2m- expect.soft.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\n    at InventoryPage.verifyURL (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts:22:40)\n    at InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts:18:16)\n    at async InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/InventoryPage.ts:23:5)",
+                        "location": {
+                          "file": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts",
+                          "column": 40,
+                          "line": 22
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../framework/pages/BasePage.ts:22\n\n\u001b[0m \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m verifyURL()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage)\u001b[33m.\u001b[39mtoHaveURL(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39murl_regex\u001b[33m!\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 23 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 24 |\u001b[39m   \u001b[36masync\u001b[39m verifyTabTitle()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtitle_regex\u001b[33m!\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts",
+                            "column": 40,
+                            "line": 22
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/\\/inventory.html/\u001b[39m\nReceived string:  \u001b[31m\"https://www.saucedemo.com/\"\u001b[39m\nCall log:\n  \u001b[2m- expect.soft.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../framework/pages/BasePage.ts:22\n\n\u001b[0m \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m verifyURL()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage)\u001b[33m.\u001b[39mtoHaveURL(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39murl_regex\u001b[33m!\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 23 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 24 |\u001b[39m   \u001b[36masync\u001b[39m verifyTabTitle()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtitle_regex\u001b[33m!\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at InventoryPage.verifyURL (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts:22:40)\u001b[22m\n\u001b[2m    at InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts:18:16)\u001b[22m\n\u001b[2m    at async InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/InventoryPage.ts:23:5)\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/InventoryPage.ts",
+                            "column": 54,
+                            "line": 24
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('id=inventory_container').first()\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../framework/pages/InventoryPage.ts:24\n\n\u001b[0m \u001b[90m 22 |\u001b[39m\u001b[0m\n\n\u001b[2m    at InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/InventoryPage.ts:24:54)\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Attemting to login with credentials  standard_user2, secret_sauce\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "I am on the login screen",
+                          "duration": 603
+                        },
+                        {
+                          "title": "I fill the login form with \"standard_user2\" username and \"secret_sauce\" password",
+                          "duration": 119
+                        },
+                        {
+                          "title": "I should be able to see the home screen",
+                          "duration": 10029,
+                          "error": {
+                            "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('id=inventory_container').first()\u001b[22m\n",
+                            "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('id=inventory_container').first()\u001b[22m\n\n    at InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/InventoryPage.ts:24:54)",
+                            "location": {
+                              "file": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/InventoryPage.ts",
+                              "column": 54,
+                              "line": 24
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m../framework/pages/InventoryPage.ts:24\n\n\u001b[0m \u001b[90m 22 |\u001b[39m\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2023-06-21T12:55:47.667Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/test-results/features-login.feature-Andrii-User-Story-REQ-T-dcb6f-ession-Positive-login-scenario-TEST-TP-21-smoke-Mobile-Chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/test-results/features-login.feature-Andrii-User-Story-REQ-T-dcb6f-ession-Positive-login-scenario-TEST-TP-21-smoke-Mobile-Chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts",
+                        "column": 40,
+                        "line": 22
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "06311dfec990197f7291-9338aabf0fe9a4c668bc",
+              "file": "features/login.feature.spec.js",
+              "line": 6,
+              "column": 7
+            },
+            {
+              "title": "Positive login scenario @TEST_TP-21 @smoke",
+              "ok": false,
+              "tags": [
+                "TEST_TP-21",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "failed",
+                      "duration": 12287,
+                      "error": {
+                        "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/\\/inventory.html/\u001b[39m\nReceived string:  \u001b[31m\"https://www.saucedemo.com/\"\u001b[39m\nCall log:\n  \u001b[2m- expect.soft.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/\\/inventory.html/\u001b[39m\nReceived string:  \u001b[31m\"https://www.saucedemo.com/\"\u001b[39m\nCall log:\n  \u001b[2m- expect.soft.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\n    at InventoryPage.verifyURL (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts:22:40)\n    at InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts:18:16)\n    at async InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/InventoryPage.ts:23:5)",
+                        "location": {
+                          "file": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts",
+                          "column": 40,
+                          "line": 22
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../framework/pages/BasePage.ts:22\n\n\u001b[0m \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m verifyURL()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage)\u001b[33m.\u001b[39mtoHaveURL(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39murl_regex\u001b[33m!\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 23 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 24 |\u001b[39m   \u001b[36masync\u001b[39m verifyTabTitle()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtitle_regex\u001b[33m!\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts",
+                            "column": 40,
+                            "line": 22
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/\\/inventory.html/\u001b[39m\nReceived string:  \u001b[31m\"https://www.saucedemo.com/\"\u001b[39m\nCall log:\n  \u001b[2m- expect.soft.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../framework/pages/BasePage.ts:22\n\n\u001b[0m \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m verifyURL()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage)\u001b[33m.\u001b[39mtoHaveURL(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39murl_regex\u001b[33m!\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 23 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 24 |\u001b[39m   \u001b[36masync\u001b[39m verifyTabTitle()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtitle_regex\u001b[33m!\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at InventoryPage.verifyURL (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts:22:40)\u001b[22m\n\u001b[2m    at InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts:18:16)\u001b[22m\n\u001b[2m    at async InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/InventoryPage.ts:23:5)\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/InventoryPage.ts",
+                            "column": 54,
+                            "line": 24
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('id=inventory_container').first()\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../framework/pages/InventoryPage.ts:24\n\n\u001b[0m \u001b[90m 22 |\u001b[39m\u001b[0m\n\n\u001b[2m    at InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/InventoryPage.ts:24:54)\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Attemting to login with credentials  standard_user2, secret_sauce\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "I am on the login screen",
+                          "duration": 830
+                        },
+                        {
+                          "title": "I fill the login form with \"standard_user2\" username and \"secret_sauce\" password",
+                          "duration": 93
+                        },
+                        {
+                          "title": "I should be able to see the home screen",
+                          "duration": 10022,
+                          "error": {
+                            "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('id=inventory_container').first()\u001b[22m\n",
+                            "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('id=inventory_container').first()\u001b[22m\n\n    at InventoryPage.verifyPageOpened (/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/InventoryPage.ts:24:54)",
+                            "location": {
+                              "file": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/InventoryPage.ts",
+                              "column": 54,
+                              "line": 24
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m../framework/pages/InventoryPage.ts:24\n\n\u001b[0m \u001b[90m 22 |\u001b[39m\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2023-06-21T12:55:47.667Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/test-results/features-login.feature-Andrii-User-Story-REQ-T-dcb6f-ession-Positive-login-scenario-TEST-TP-21-smoke-Mobile-Safari/test-failed-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/test-results/features-login.feature-Andrii-User-Story-REQ-T-dcb6f-ession-Positive-login-scenario-TEST-TP-21-smoke-Mobile-Safari/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/Andrii_Frolov/Root/Projects/Sandbox/playwright-cucumber/framework/pages/BasePage.ts",
+                        "column": 40,
+                        "line": 22
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "06311dfec990197f7291-7bf2d33731eea2903f84",
+              "file": "features/login.feature.spec.js",
+              "line": 6,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

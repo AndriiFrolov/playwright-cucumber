@@ -1,0 +1,24 @@
+{
+  "name": "playwright-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx bddgen && npx playwright test",
+    "watch:pw": "npm run test -- --ui",
+    "test:headed": "npm run test -- --headed",
+    "test:smoke": "npm run test -- --grep=@smoke",
+    "test:rerun": "npm run test -- --grep=$(node readFailedTests.js)"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.1.2",
+    "@playwright/test": "^1.35.1",
+    "fs": "^0.0.1-security",
+    "playwright-bdd": "^3.0.2",
+    "shelljs": "^0.8.5",
+    "ts-node": "^10.9.1"
+  }
+}
